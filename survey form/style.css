@@ -1,0 +1,85 @@
+:root {
+	--black: #272727;
+	--lightGrey: #dfdfdf;
+	--darkGrey: #c4c4c4;
+	--lightPurple: #408ba8;
+	--darkPurple: #204958;
+}
+
+html {
+	box-sizing: border-box;
+	/* A system font stack so things load nice and quick! */
+	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+		Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
+		'Segoe UI Symbol';
+	color: var(--black);
+	text-shadow: 0 2px 0 rgba(0, 0, 0, 0.07);
+	display: block;
+}
+
+*,
+*:before,
+*:after {
+	box-sizing: inherit;
+}
+body {
+	background: var(--lightPurple);
+	color: white;
+}
+
+fieldset {
+	border: none;
+}
+header {
+	text-align: center;
+}
+main {
+	max-width: 700px;
+	margin: auto;
+}
+.formWrapper {
+	display: flex;
+	flex-direction: column;
+	background: var(--darkPurple);
+	padding: 1em;
+	font-size: 2vh;
+}
+form {
+	align-self: center;
+}
+.socialCheckBox {
+	display: flex;
+	flex-direction: column;
+}
+
+.socialTime {
+	display: flex;
+	flex-direction: column;
+}
+.row {
+	display: flex;
+	flex-wrap: wrap;
+}
+.row__11 {
+	flex-basis: 90.9090909%;
+	width: 90.9090909%;
+	padding: 0.3em 0;
+}
+.row__11--input {
+	border: 1px solid ghostwhite;
+	border-radius: 0.25em;
+	padding: 0.5em 1em;
+}
+.row__12 {
+	flex-basis: 100%;
+	padding: 0.3em 0;
+}
+button[type='submit'] {
+	display: block;
+	background: #43961d;
+	border-color: #43961d;
+	border-right: 0px;
+	border-radius: 0.25em;
+	color: white;
+	padding: 1em;
+}

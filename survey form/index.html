@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<title>Survey Form</title>
+		<link rel="stylesheet" href="./style.css" />
+		<script
+			defer
+			src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"
+		></script>
+	</head>
+	<body>
+		<div id="wrapper">
+			<header>
+				<h1 id="title">Social Networking Survey</h1>
+				<p id="description">
+					Thank you for taking time to help us in our research
+				</p>
+			</header>
+			<main>
+				<div class="formWrapper">
+					<form id="survey-form" action="./#" method="get">
+						<fieldset class="row">
+							<label class="row__11" id="name-label" for="name"
+								>Name</label
+							>
+							<input
+								class="row__11 row__11--input"
+								type="text"
+								name="name"
+								id="name"
+								placeholder="Enter your name"
+								required
+							/>
+						</fieldset>
+						<fieldset class="row">
+							<label class="row__11" id="email-label" for="email"
+								>Email</label
+							>
+							<input
+								class="row__11 row__11--input"
+								type="email"
+								name="email"
+								id="email"
+								placeholder="Enter your Email"
+								required
+							/>
+						</fieldset>
+						<fieldset class="row">
+							<label class="row__11" id="number-label" for="age"
+								>Age (optional)</label
+							>
+							<input
+								id="number"
+								class="row__11 row__11--input"
+								type="number"
+								name="age"
+								id="age"
+								min="10"
+								max="120"
+								placeholder="Enter your age"
+							/>
+						</fieldset>
+						<fieldset class="row">
+							<label class="row__11"
+								>Which describe you best ?</label
+							>
+							<select
+								class="row__11 row__11--input"
+								name="role"
+								id="dropdown"
+							>
+								<option
+									value="Select current role"
+									disabled
+									selected
+									>Select current role</option
+								>
+								<option value="student">Student</option>
+								<option value="full time job"
+									>Full Time Job</option
+								>
+								<option value="full time learner"
+									>Full Time Learner</option
+								>
+								<option value="looking for job"
+									>Looking for Job</option
+								>
+							</select>
+						</fieldset>
+						<fieldset class="socialTime">
+							<label>
+								<input
+									type="radio"
+									name="socialSiteTime"
+									value="0-30"
+								/>
+								0-30 mins
+							</label>
+							<label>
+								<input
+									type="radio"
+									name="socialSiteTime"
+									value="30-60 min"
+								/>
+								30min - 1hr
+							</label>
+							<label>
+								<input
+									type="radio"
+									name="socialSiteTime"
+									value="60-120 min"
+								/>
+								1hr - 2hr
+							</label>
+							<label>
+								<input
+									type="radio"
+									name="socialSiteTime"
+									value="more than 120 min"
+								/>
+								More Than 2hr
+							</label>
+						</fieldset>
+						<fieldset class="row">
+							<label class="row__11"
+								>Which site you most use ?</label
+							>
+							<select
+								class="row__11 row__11--input"
+								name="favoriteSite"
+								id="dropdown2"
+							>
+								<option value="Select a site" disabled selected
+									>Select a site</option
+								>
+								<option value="facebook">Facebook</option>
+								<option value="twitter">Twitter/option> </option
+								><option value="instagram">Instagram</option>
+								<option value="reddit">Reddit</option>
+								<option value="other">Other</option>
+							</select>
+						</fieldset>
+						<fieldset class="socialCheckBox">
+							<p>What do you do in the sites ?</p>
+							<label>
+								<input
+									type="checkbox"
+									name="friends"
+									id="friends"
+									value="friends"
+								/>
+								Catch up with friends
+							</label>
+							<label>
+								<input
+									type="checkbox"
+									name="meme"
+									value="meme"
+									id="meme"
+								/>
+								Enjoy memes
+							</label>
+							<label>
+								<input
+									type="checkbox"
+									name="groups"
+									id="groups"
+									value="groups"
+								/>
+								Enjoy going to different roups
+							</label>
+							<label>
+								<input
+									type="checkbox"
+									name="discussion"
+									id="discussion"
+									value="discussion"
+								/>
+								Discuss various topics
+							</label>
+							<label>
+								<input
+									type="checkbox"
+									name="sharing"
+									id="sharing"
+									value="sharing"
+								/>
+								Share Your self
+							</label>
+							<label>
+								<input
+									type="checkbox"
+									name="News"
+									value="news"
+									id="News"
+								/>
+								Get the news
+							</label>
+							<label>
+								<input
+									type="checkbox"
+									name="shout"
+									id="shout"
+									value="shout"
+								/>
+								Shout about al the injustice in the world
+							</label>
+							<label>
+								<input
+									type="checkbox"
+									name="overshare"
+									id="overshare"
+									value="overshare"
+								/>
+								Overshare
+							</label>
+							<label>
+								<input
+									type="checkbox"
+									name="asshole"
+									id="asshole"
+									value="asshole"
+								/>
+								Being an asshole
+							</label>
+						</fieldset>
+						<fieldset>
+							<label class="row">
+								<p>Any comments of suggestion ?</p>
+								<textarea
+									class="row__11 row__11--input"
+									name="suggestion"
+									id="suggestion"
+									cols="40"
+									rows="5"
+									placeholder="Any comments or suggestion ?"
+								></textarea>
+							</label>
+						</fieldset>
+						<fieldset>
+							<label class="row" for="submit">
+								<button
+									id="submit"
+									class="row__12"
+									type="submit"
+								>
+									Submit
+								</button>
+							</label>
+						</fieldset>
+					</form>
+				</div>
+			</main>
+		</div>
+	</body>
+</html>
